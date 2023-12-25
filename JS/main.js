@@ -241,3 +241,12 @@ showTpass.forEach(eye => {
         }
     });
 });
+
+////////////////////////// نسبة الخصم
+const taddDes = document.querySelector('#taddDesc ');
+const taddDescprice = document.querySelector('#taddDescprice ');
+
+var taddDesc = function () {
+    taddDescprice.style.display = 'block';
+    taddDes.style.display = 'none';
+}
