@@ -1,24 +1,24 @@
 @font-face {
   font-family: Cairo;
-  src: url(../Fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
-  src: url(../Fonts/Cairo/static/Cairo-SemiBold.ttf)format('truetype');
+  src: url(../Fonts/Cairo/Cairo-VariableFont_slnt\wght.ttf);
+  src: url(../Fonts/Cairo/static/Cairo-SemiBold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: Cairo;
-  src: url(../Fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
-  src: url(../Fonts/Cairo/static/Cairo-Black.ttf)format('truetype');
+  src: url(../Fonts/Cairo/Cairo-VariableFont_slnt\wght.ttf);
+  src: url(../Fonts/Cairo/static/Cairo-Black.ttf) format("truetype");
 }
 
 @font-face {
   font-family: Cairo;
-  src: url(../Fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
-  src: url(../Fonts/Cairo/static/Cairo-Regular.ttf)format('truetype');
+  src: url(../Fonts/Cairo/Cairo-VariableFont_slnt\wght.ttf);
+  src: url(../Fonts/Cairo/static/Cairo-Regular.ttf) format("truetype");
 }
 
 :root {
-  --btnColor: #A5410A;
-  --Brown: #3D2C2C;
+  --btnColor: #a5410a;
+  --Brown: #3d2c2c;
 }
 
 body {
@@ -35,15 +35,13 @@ body {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  color: var(--brown, #3D2C2C);
+  color: var(--Brown);
   text-align: right;
   font-family: Cairo;
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: 117.687%;
-
-
 }
 
 nav {
@@ -62,7 +60,7 @@ nav li {
 }
 
 nav li a img:hover {
-  color: red !important;
+  color: #934b00 !important;
 }
 
 nav .pages-link li a {
@@ -71,34 +69,29 @@ nav .pages-link li a {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-
 }
 
 nav li a i {
-
   font-size: 25px;
   font-weight: lighter;
 }
 
 nav li a i:hover {
-  color: #934B00 !important;
+  color: #934b00 !important;
 }
-
-
 
 nav .search input {
   width: 19.08469rem;
   border-radius: 1.5625rem;
-  background: #FFF;
+  background: #fff;
 }
 
 nav .search input::placeholder {
   flex-direction: column;
-  color: rgba(0, 0, 0, 0.40);
+  color: rgba(0, 0, 0, 0.4);
   font-family: Cairo;
   font-size: 1.25rem;
   font-weight: 400;
-
 }
 
 /****************** Sign up ******************************/
@@ -108,9 +101,7 @@ nav .search input::placeholder {
   background-position: center;
   background-size: cover;
   height: 100vh;
-
 }
-
 
 .note {
   position: relative;
@@ -118,21 +109,19 @@ nav .search input::placeholder {
   height: fit-content;
   width: 70%;
   border-radius: 1.25rem;
-  background: rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(5px);
   text-align: right;
-
 }
 
 .note p {
   display: flex;
   flex-direction: column;
-  color: #FFF;
+  color: #fff;
   /* text-align: right; */
   font-family: Cairo;
   font-size: 1.5rem;
   font-weight: 700;
-
 }
 
 .rightSide {
@@ -152,19 +141,19 @@ nav .search input::placeholder {
 }
 
 /**/
-.rightSide form input[type=text],
-.rightSide form input[type=password],
-.rightSide form input[type=date],
-.rightSide form input[type=email] {
+.rightSide form input[type="text"],
+.rightSide form input[type="password"],
+.rightSide form input[type="date"],
+.rightSide form input[type="email"] {
   width: 150%;
   height: 2.99rem;
   border-radius: 0.375rem;
-  border: 1px solid #D3D1D1;
+  border: 1px solid #d3d1d1;
 }
 
-.rightSide form input[type=radio],
-label[for='radioBuyer'],
-label[for='radioSeller'] {
+.rightSide form input[type="radio"],
+label[for="radioBuyer"],
+label[for="radioSeller"] {
   /* width: 3rem; */
   height: 1rem;
   font-size: 1.5rem;
@@ -183,7 +172,7 @@ label[for='radioSeller'] {
   border-radius: 0.375rem;
   background: var(--btnColor);
   border: var(--btnColor) 1px solid;
-  color: #FFF;
+  color: #fff;
   font-size: 1.25rem;
 }
 
@@ -191,7 +180,6 @@ label[for='radioSeller'] {
   background: white;
   border: var(--btnColor) 1px solid;
   color: var(--btnColor);
-
 }
 
 /* .rightSide form input::placeholder {
@@ -209,12 +197,10 @@ label[for='radioSeller'] {
 
 .password-container {
   position: relative;
-
 }
 
 .password-container input[type="password"],
 .password-container input[type="text"] {
-
   box-sizing: border-box;
 }
 
@@ -246,7 +232,6 @@ label[for='radioSeller'] {
 .rightSide form p a {
   color: var(--btnColor);
   font-weight: 700;
-
 }
 
 .rightSide .forgetPass,
@@ -263,25 +248,21 @@ label[for='radioSeller'] {
 .rightSide .forgetPass a:hover {
   text-decoration: underline;
   color: var(--btnColor);
-
 }
 
 /******* end nav *****************/
 
-
-
 /********** start المنتجات**********/
 .Tcontant p {
-  color: #3D2C2C;
+  color: var(--Brown);
   font-family: Cairo;
   font-size: 25px;
   font-weight: 600;
   line-height: 100.687%;
-
 }
 
 .TproductPageSelect select {
-  color: #3D2C2C;
+  color: var(--Brown);
   font-family: Cairo;
   font-size: 23px;
   font-weight: 400;
@@ -296,9 +277,8 @@ label[for='radioSeller'] {
   background-image: url(../images/Arrow\ 2.svg);
   background-repeat: no-repeat;
   background-position: left 0em top 50%, 0 0;
-  background-size: .65em auto, 100%;
+  background-size: 0.65em auto, 100%;
 }
-
 
 .TproductPageSelect i {
   position: relative;
@@ -321,7 +301,7 @@ label[for='radioSeller'] {
   margin: 23px 0px 10px 0px;
   align-self: center !important;
   align-content: center !important;
-  background-color: #0EB0BA;
+  background-color: #0eb0ba;
 }
 
 .TcardDivimg img {
@@ -331,7 +311,6 @@ label[for='radioSeller'] {
   object-position: center;
 }
 
-
 .TLOVE {
   position: absolute;
   top: 5%;
@@ -339,33 +318,31 @@ label[for='radioSeller'] {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #FFF;
+  background-color: #fff;
   border: none;
   outline: none;
   text-align: center;
-
 }
 
 .TLOVE i {
   /* margin: 7.5px 5.5px 0px 3px; */
   font-size: 19px;
-  color: #3D2C2C;
+  color: var(--Brown);
   justify-self: center;
   /* cursor: pointer; */
 }
 
 .TLOVE i:hover {
-  color: #BA1A1A;
+  color: #ba1a1a;
   transition: 0.4s;
 }
-
 
 .TcardBTN {
   background-color: var(--btnColor);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   justify-content: center;
   align-items: center;
-  color: #FFF;
+  color: #fff;
   padding: 7px 50px;
   cursor: pointer;
   border-radius: 6px;
@@ -376,7 +353,7 @@ label[for='radioSeller'] {
 }
 
 .TcardBTN:hover {
-  background-color: #FFF;
+  background-color: #fff;
   color: var(--btnColor);
   border: 1px solid var(--btnColor);
 }
@@ -385,47 +362,41 @@ label[for='radioSeller'] {
   color: #737373;
   text-align: right;
   font-family: Cairo;
-  font-size: 20px;
+  font-size: 1.23rem;
   font-weight: 300;
   line-height: 0px;
 }
-.tcardtextg a{
-  text-decoration: none;
-  color: #737373;
-}
+
 .tcardtextp {
   color: #000;
   text-align: right;
   font-family: Cairo;
   font-size: 20px;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .tstar {
   text-align: right;
-  line-height: 0px;
-
+  line-height: 3px;
 }
 
 .tstaricon {
-  color: #BFBFBF;
-  font-size: 20px;
+  color: #bfbfbf;
+  font-size: 1.25rem;
   width: 165px;
 }
 
 .Tstartext {
   color: #464920;
   font-family: Cairo;
-  font-size: 16px;
+  font-size: 1.13rem;
   font-weight: 400;
-
+  margin-right: 0.55rem;
 }
 
-
-
 .disc {
-  color: #BA1A1A;
+  color: #ba1a1a;
   text-align: right;
   font-family: Cairo;
   font-size: 15px;
@@ -433,15 +404,12 @@ label[for='radioSeller'] {
   line-height: 28px;
   background-color: #ba1a1a28;
   padding: 3px;
-
 }
-
 
 /******* نهاية المنتجات ********/
 
 /******* بداية المفضله فارغه ****/
 .Tempty {
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -467,7 +435,6 @@ label[for='radioSeller'] {
   font-weight: 400;
 }
 
-
 /***** نهاية المفضله فارغة******/
 
 /*******بداية المفضلة***********/
@@ -480,9 +447,8 @@ label[for='radioSeller'] {
   /* margin: 10px 10px; */
   align-self: center !important;
   align-content: center !important;
-  background-color: #0EB0BA;
+  background-color: #0eb0ba;
   /* display: flex; */
-
 }
 
 .TcardHorizDivimg img {
@@ -493,20 +459,19 @@ label[for='radioSeller'] {
 }
 
 .tcard {
-
   border-radius: 24px;
-  border: 1px solid #E1E1E1;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+  border: 1px solid #e1e1e1;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .tcardtextpfav {
-  font-size: 27px;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7rem !important;
 }
 
 .discfav {
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 3.5 !important;
 }
 
@@ -518,7 +483,7 @@ label[for='radioSeller'] {
   border: none;
   outline: none !important;
   text-align: center;
-  color: #BA1A1A;
+  color: #ba1a1a;
   background-color: transparent;
   text-align: right;
   font-family: Cairo;
@@ -530,7 +495,7 @@ label[for='radioSeller'] {
 }
 
 .Tdelete:hover {
-  border: #BA1A1A solid 1px;
+  border: #ba1a1a solid 1px;
 }
 
 .Tdelete img {
@@ -538,7 +503,6 @@ label[for='radioSeller'] {
   position: relative;
   top: -2px;
 }
-
 
 /*******نهاية المفضلة***********/
 
@@ -548,7 +512,7 @@ footer {
   width: 100%;
   height: 350px;
   text-align: end;
-  color: #FFF;
+  color: #fff;
 }
 
 .footerlogo h2 {
@@ -571,7 +535,6 @@ footer {
 }
 
 .footer p {
-
   text-align: right;
   font-family: Cairo;
   font-size: 16px;
@@ -591,9 +554,7 @@ footer {
 
 /******** start product details ********/
 .right-sideInPD {
-
   border-left: #9b9a9a solid 0.6px;
-
 }
 
 .imagesPH {
@@ -631,7 +592,7 @@ footer {
 } */
 
 .left-sideInPD h2 {
-  color: var(--black, #000000);
+  color: #000000;
   text-align: right;
   font: 400 36px/47px "Cairo", sans-serif;
   position: relative;
@@ -650,14 +611,12 @@ footer {
 }
 
 .RealDetailes h2 {
-  color: var(--black, #000000);
+  color: #000000;
   text-align: right;
   font: 400 36px/47px "Cairo", sans-serif;
   position: relative;
   width: 631px;
   height: 95px;
-
-
 }
 
 .RealDetailes .brand {
@@ -672,20 +631,18 @@ footer {
 
 .sharing_icons i,
 .sharing_icons a {
-  color: #605D5D;
+  color: #605d5d;
   font-size: 20px;
   font-weight: 100;
   padding: 3%;
   padding-right: 0%;
   text-decoration: none;
-
 }
 
 .Product_sharing .BTNlove {
-
   border-radius: 0.375rem;
   border: 1px solid #817757;
-  background: var(--Color, #FFF);
+  background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -697,7 +654,7 @@ footer {
 
 .detailList .details_headlines li,
 .detailList .details_headlines li a {
-  color: var(--BROWN, #3D2C2C);
+  color: var(--Brown);
   text-align: right;
   font-family: Cairo;
   font-size: 1.65rem;
@@ -707,7 +664,6 @@ footer {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-
 }
 
 .detailList .details_headlines li a:hover {
@@ -716,7 +672,6 @@ footer {
   font-style: normal;
   font-weight: 800;
   line-height: 117.687%;
-
 }
 
 .detailList .frame {
@@ -731,8 +686,8 @@ footer {
   gap: 2.75rem;
   flex-shrink: 0;
   border-radius: 1.5rem;
-  background: var(--Color, #FFF);
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.20);
+  background: #fff;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .detailList .frame .div,
@@ -823,7 +778,6 @@ footer {
   padding: 7.5px 18px;
   background-color: black;
   border-radius: 52.5px;
-
 }
 
 .detailList .frame .div-3 {
@@ -843,7 +797,6 @@ footer {
   position: relative;
   flex: 0 0 auto;
 }
-
 
 .detailList .frame .star-wrapper {
   position: relative;
@@ -875,7 +828,6 @@ footer {
 .detailList .frame .div-7 {
   gap: 17.25px;
 }
-
 
 .detailList .frame .rectangle,
 .detailList .frame .rectangle-2,
@@ -916,7 +868,6 @@ footer {
   border-bottom: #817757 solid 2px;
 }
 
-
 #instrPRO,
 #reviewsPRO,
 #manuIMG {
@@ -924,7 +875,6 @@ footer {
 }
 
 /********** end of Product details*********/
-
 
 /********** start of Inbox*********/
 
@@ -934,7 +884,6 @@ footer {
   position: fixed;
   height: 100%;
   overflow: auto;
-
 }
 
 .side-bar li a {
@@ -947,19 +896,18 @@ footer {
 }
 
 .side-bar li:hover {
-  background-color: #EEE;
+  background-color: #eee;
   width: 100% !important;
 }
 
 .side-bar ul {
   list-style: none;
-  border-left: #9B9A9A solid 1px;
-
+  border-left: #9b9a9a solid 1px;
 }
 
 .side-bar .logout a {
   text-decoration: none;
-  color: #93000A;
+  color: #93000a;
   text-align: right;
   font-family: Cairo;
   font-size: 1.1rem;
@@ -977,16 +925,14 @@ footer {
   font-family: Cairo;
   font-style: normal;
   font-weight: 800;
-
 }
-
 
 .msg .overlay {
   overflow: hidden !important;
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 1px solid #84746A;
+  border: 1px solid #84746a;
 }
 
 .msg .overlay img {
@@ -1005,17 +951,16 @@ footer {
 }
 
 .msg p {
-  color: #84746A;
+  color: #84746a;
   font-family: Cairo;
   font-size: 1rem;
   /* font-style: normal; */
   font-weight: 500;
 }
 
-
 .inbox .edit p {
   color: white;
-  background-color: #817757;
+  background-color: var(--btnColor);
   cursor: pointer;
 }
 
@@ -1027,13 +972,16 @@ footer {
 
 /********** start of seller Products*******/
 
-
 .sellerPro form {
   border-radius: 0.5rem;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-right: 20px;
 }
 
 .sellerPro form input {
-  background: #F8FAFB;
+  background: #f8fafb;
 }
 
 .sellerPro form input::placeholder {
@@ -1043,7 +991,7 @@ footer {
 
 .sellerPro form i,
 .sellerPro form input::placeholder {
-  color: #C1CACE;
+  color: #c1cace;
   font-size: 1rem;
   font-style: normal;
   line-height: normal;
@@ -1051,21 +999,27 @@ footer {
 
 .sellerPro form i {
   position: absolute;
-  top: 2.5%;
-  right: 20%;
-  display: block;
+  bottom: 25%;
+  right: 15%;
+  /* display: block; */
 }
 
 .sellerPro form input:focus i {
   display: none !important;
   /* color: #5F0D0D; */
 }
-
-.sellerPro .sellerLogo img {
-  width: 3rem;
-  height: 3rem;
+.sellerPro .sellerLogo {
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  /* text-align: left; */
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.sellerPro .sellerLogo img {
+  width: 180%;
+  height: 180%;
+  object-fit: cover;
 }
 
 .sellerPro .sellerLogo h6 {
@@ -1076,7 +1030,7 @@ footer {
 }
 
 .sellerPro .sellerPro-desc {
-  color: #605D5D;
+  color: #605d5d;
   text-align: justify;
   font-family: Cairo;
   font-size: 1.25rem;
@@ -1087,9 +1041,8 @@ footer {
 }
 
 .sellerPro .sidebar li a i {
-  color: #ADB7BC;
+  color: #adb7bc;
   font-size: 1.2rem;
-
 }
 
 .sellerPro .sidebar li a {
@@ -1102,9 +1055,8 @@ footer {
 }
 
 .sellerPro .sidebar li:hover {
-  background-color: #EEE;
+  background-color: #eee;
   width: 100% !important;
-
 }
 
 .sellerPro .sidebar li:hover a {
@@ -1117,7 +1069,6 @@ footer {
   color: black !important;
 }
 
-
 .sellerPro .sidebar ul {
   list-style: none;
   padding: 0px;
@@ -1125,7 +1076,7 @@ footer {
 
 .sellerPro .sidebar .logout a {
   text-decoration: none;
-  color: #93000A;
+  color: #93000a;
   text-align: right;
   font-family: Cairo;
   font-size: 1.1rem;
@@ -1133,17 +1084,214 @@ footer {
   font-weight: 700;
   line-height: 117.687%;
 }
+.btnEdit i{
+  color: #7E6DE8;
+  font-size: 1.2rem;
+  cursor: pointer;
+  
+}
+.tableSellerP{
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #817757;
+  font: Cairo;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #817757;
+}
+.tr1:hover{
+  background-color: #eeeeeea5;
+}
+.tr1 td{
+  color: #828282;
 
+}
+input[type="checkbox"]{
+  width: 1.12rem;
+  height: 1.12rem;
+  accent-color: var(--btnColor);
+  
+}
+.ImgSellerPro img{
+  width: 70%;
+  height:10vh;
+  overflow: hidden;
+  object-fit: fill;
+  border-radius: 10%;
+}
 /********** end of seller Products*******/
+/* start Admin***/
+.ordersLabel2 {
+  background-color: #d9c685;
+  color: var(--Brown) !important;
+  text-align: center;
+  font-family: Cairo;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.ordersLabel2 th {
+  padding: 12px 0;
+}
+.ordersLabel2 .firstth {
+  border-radius: 0 3px 13px 0;
+}
+.ordersLabel2 .lastth {
+  border-radius: 3px 0 0 13px;
+}
+.tAdminCard {
+  border-radius: 3px;
+  width: 100%;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.1);
+  border-spacing: 0;
+}
+.adminDele {
+  color: var(--btnColor);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.btnadminDele, .btnEdit{
+  background: transparent;
+  border: none;
+}
+.adminSelect {
+  background-color: var(--btnColor);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: Cairo;
+  border: none !important;
+  outline: none !important;
+  border-radius: 13px;
+}
+.adminSelect:focus {
+  box-shadow: 0px 0px 2px 0px var(--btnColor) !important;
+}
+.adminSelectDiv {
+  position: relative;
+  /* top: 3px; */
+  width: 100%;
+}
+.adminSelectDiv::after {
+  content: "\f078";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50%;
+  right: 14%;
+  margin-top: -9px;
+  z-index: 1;
+  width: 13px;
+  height: 13px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.tdateAdmin {
+  font-size: 1rem !important;
+  font-weight: 600;
+}
+.TorderColerdBg {
+  justify-content: center;
+  align-items: center;
+}
+
+.ordersData .TorderColerdBg:nth-child(even) {
+  background-color: #f7f4e7;
+}
+
+@media (max-width: 535px) {
+  .TemalAdmin {
+    font-size: 0.6rem !important;
+  }
+  .Adminimg img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .Adminimg h6 {
+    font-size: 0.8rem !important;
+  }
+  .ordersLabel2 th ,.tableSellerP th{
+    font-size: 0.8rem !important;
+  }
+  .adminSelectDiv::after {
+    content: "\f078";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    margin-top: -5px;
+    z-index: 1;
+    width: 13px;
+    height: 13px;
+    font-size: 0.5rem;
+    color: #fff;
+  }
+  .adminDele,.btnEdit i {
+    font-size: 0.9rem !important;
+  }
+  .adminSelectDiv {
+    width: 70%;
+  }
+  .adminSelect {
+    font-size: 0.6rem !important;
+  }
+  .tdateAdmin {
+    font-size: x-small !important;
+  }
+  input[type="checkbox"]{
+    width: .8rem;
+    height: .8rem;
+    
+  }
+  .ImgSellerPro img{
+    width: 90%;
+    height:10vh;
+    overflow: hidden;
+    object-fit: fill;
+    border-radius: 10%;
+  }
+  .sellerPro form i {
+    position: absolute;
+    bottom: 25%;
+    right: 30%;
+    /* display: block; */
+  }
+}
+
+@media (max-width: 355px) {
+  .TemalAdmin {
+    font-size: 0.45rem !important;
+  }
+  .tdateAdmin {
+    font-size: 0.6rem !important;
+  }
+  .adminSelectDiv {
+    width: 100%;
+  }
+  .adminSelect {
+    font-size: 0.5rem !important;
+  }
+  .adminDele,.btnEdit i{
+    font-size: 0.7rem !important;
+  }
+  .ordersLabel2 th ,.tableSellerP th{
+    font-size: 0.5rem !important;
+  }
+  input[type="checkbox"]{
+    width: .7rem;
+    height: .7rem;
+    
+  }
+}
+/**end admin**/
 
 /********** start of seller orders*******/
 .ordersLabel {
-  background-color: #F7F9FA;
+  background-color: #f7f9fa;
 }
 
 .ordersLabel h5 {
   text-align: center;
-  color: #A6A9AA;
+  color: #a6a9aa;
   font-family: Cairo;
   font-size: 0.8125rem;
   font-style: normal;
@@ -1156,6 +1304,7 @@ footer {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 2.5rem;
+  object-fit: cover;
 }
 
 .ordersData h6 {
@@ -1165,9 +1314,8 @@ footer {
   font-size: 1rem;
   font-weight: 800;
 }
-
 .ordersData .date small {
-  color: #A7AEB1;
+  color: #a7aeb1;
   font-family: Cairo;
   font-size: 0.875rem;
   font-style: normal;
@@ -1175,41 +1323,52 @@ footer {
   line-height: normal;
 }
 
-.ordersData .pendding {
-  color: #3D2C2C;
+.orderStatus {
   font-family: Cairo;
   font-size: 1rem;
   font-weight: 900;
   border-radius: 0.3125rem;
-  background-color: #DFF0FF;
+  border: none;
+  outline: none;
+  background-color: #f7f9fa;
+  color: var(--Brown);
+  padding: 3px 5px;
+}
+.tordersta {
+  position: relative;
+}
+.tordersta::before {
+  content: "\f078";
+  font: var(--fa-font-solid);
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  margin-top: -5px;
+  z-index: 1;
+  width: 13px;
+  height: 13px;
+  font-size: 13px;
+  opacity: 0.5;
+}
+.pendding {
+  color: var(--Brown) !important;
+  background-color: #dff0ff !important;
+}
+.delivered {
+  color: #78c278 !important;
+  background-color: #e6fde6 !important;
 }
 
-.ordersData .delivered {
-  color: #78C278;
-  font-family: Cairo;
-  font-size: 1rem;
-  font-weight: 900;
-  border-radius: 0.3125rem;
-  background-color: #E6FDE6;
+.underManuf {
+  color: #faa86d !important;
+  background-color: #fff4df !important;
 }
-
-.ordersData .underManuf {
-  color: #FAA86D;
-  font-family: Cairo;
-  font-size: 1rem;
-  font-weight: 900;
-  border-radius: 0.3125rem;
-  background-color: #FFF4DF;
-}
-
-
-
 
 /********** end of seller orders*******/
 
 /********** start of seller main*******/
 .statis h5 {
-  color: #93A3AB;
+  color: #93a3ab;
   font-family: Cairo;
   font-size: 1rem;
   font-style: normal;
@@ -1222,27 +1381,26 @@ footer {
   font-size: 1.25rem;
   font-weight: 700;
   font-family: Cairo;
-
 }
 
 .statis p .todayRev {
-  color: #C56565;
+  color: #c56565;
   font-size: 0.72369rem;
   font-weight: 700;
   border-radius: 0.72369rem;
-  background-color: #F4E3E3;
+  background-color: #f4e3e3;
 }
 
 .statis p .totalRev {
-  color: #65C565;
+  color: #65c565;
   font-size: 0.72369rem;
   font-weight: 700;
   border-radius: 0.72369rem;
-  background-color: #E3F4E3;
+  background-color: #e3f4e3;
 }
 
 .newOrders p {
-  color: #ACB7BD;
+  color: #acb7bd;
   text-align: right;
   font-size: 1rem;
   font-weight: 600;
@@ -1250,7 +1408,6 @@ footer {
 }
 
 /********** end of seller main*******/
-
 
 /********** start of home*********/
 header {
@@ -1262,19 +1419,16 @@ header {
   background-position: center;
   background-size: cover;
 }
-
-#background-video{
-  width:93vw;
+#background-video {
+  width: 93vw;
   /* height:90vh; */
-  margin-left:-5%; 
+  margin-left: -5%;
   /* margin-right: -50%;
   /* position: absolute; */
   /* right: 1px; */
   /* left: -6%; */
   background-size: cover;
   background-position: center;
-
-
 }
 
 .headtxt h2 {
@@ -1288,7 +1442,7 @@ header {
 }
 
 .headline {
-  background: linear-gradient(to right, #FCF6E9, #F5E29C);
+  background: linear-gradient(to right, #fcf6e9, #f5e29c);
   width: 15%;
   height: 50px;
   text-align: end;
@@ -1308,16 +1462,14 @@ header {
 
 .catg {
   margin-left: 3.3%;
-
 }
 
 .catg img {
   width: 130%;
   height: 70%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   border-radius: 7%;
   z-index: 1;
-
 }
 
 .catg h5 {
@@ -1328,14 +1480,14 @@ header {
   color: white;
 }
 
-.dstyle{
-  direction: rtl; 
+.dstyle {
+  direction: rtl;
   color: white;
-  margin-top:-15%;
+  margin-top: -15%;
   margin-right: 10%;
 }
 .doffer {
-  background-color: #E1C8A3;
+  background-color: #e1c8a3;
   margin: 3%;
 }
 
@@ -1356,16 +1508,16 @@ header {
 
 .doffer h2 {
   text-align: end;
-  color: #5F0D0D;
+  color: #5f0d0d;
   margin-right: 5%;
 }
 
 .doffer button {
   width: 27%;
   height: 13%;
-  background-color: #D63B21;
+  background-color: #d63b21;
   border-radius: 10px;
-  border: #D63B21;
+  border: #d63b21;
   color: white;
   padding-bottom: 5%;
   position: relative;
@@ -1376,7 +1528,6 @@ header {
 
 .doffer2 {
   margin-top: 4%;
-
 }
 
 .doffer2img {
@@ -1427,7 +1578,7 @@ header {
   transform: translateY(-50%);
 }
 
-@media (min-width:500px) {
+@media (min-width: 500px) {
   .dcardd img {
     height: 11em;
   }
@@ -1465,8 +1616,7 @@ header {
 }
 
 .dheart i:hover {
-  color: #5F0D0D;
-
+  color: #5f0d0d;
 }
 
 .dheart img {
@@ -1476,7 +1626,6 @@ header {
 }
 
 .dheart2 img {
-
   height: 100%;
   width: 100%;
 }
@@ -1490,16 +1639,13 @@ header {
 }
 
 .dcard {
-
   width: 27%;
   height: 500px;
-
 }
 
 .dcard2 {
   width: 27%;
 }
-
 
 .dbody {
   margin-top: -40%;
@@ -1509,7 +1655,6 @@ header {
 .dbody2 {
   position: relative;
   left: 28%;
-
 }
 
 .dbody2 p {
@@ -1549,7 +1694,7 @@ header {
 }
 
 .rightcard1 {
-  border: solid #efefee .5px;
+  border: solid #efefee 0.5px;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 2px#efefee;
   margin-top: 3%;
@@ -1563,11 +1708,10 @@ header {
 .thirdcol {
   margin-right: 20%;
   margin-top: 4%;
-
 }
 
 .thirdcol h6 {
-  color: #B81A1A;
+  color: #b81a1a;
   margin-top: 25%;
   margin-right: 65%;
 }
@@ -1578,8 +1722,8 @@ header {
 }
 
 .discount2 {
-  color: #B81A1A;
-  background-color: #FFDCC5;
+  color: #b81a1a;
+  background-color: #ffdcc5;
   margin-right: 50%;
 }
 
@@ -1607,13 +1751,12 @@ header {
   border: solid;
   margin: 1% auto;
   padding: 1% auto;
-  background-color: #5E6135;
-
+  background-color: #5e6135;
 }
 
 .wrapper span.num {
   font-size: 170%;
-  color: #3D2C2C;
+  color: var(--Brown);
   background-color: white;
   border: none;
   pointer-events: none;
@@ -1621,7 +1764,7 @@ header {
 
 .finalorder {
   text-align: center;
-  border: solid #efefee .5px;
+  border: solid #efefee 0.5px;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 2px#efefee;
   margin-top: 1%;
@@ -1640,8 +1783,8 @@ header {
 }
 
 .dbtn {
-  background-color: #817757;
-  border: solid #817757;
+  background-color: var(--btnColor);
+  border: solid var(--btnColor) 1px;
   color: white;
   height: 80%;
   padding-bottom: 1%;
@@ -1650,7 +1793,7 @@ header {
 }
 
 .dbtn:hover {
-  color: #817757;
+  color: var(--btnColor);
   background-color: white;
   border: solid var(--btnColor) 1px;
 }
@@ -1662,8 +1805,8 @@ header {
   height: 80%;
   padding-bottom: 1%;
   border-radius: 5px;
-  color: #817757;
-  border: solid #817757 1px;
+  color: var(--btnColor);
+  border: solid var(--btnColor) 1px;
 }
 
 .form-label {
@@ -1676,7 +1819,6 @@ header {
 
 /*******تأكيد الطلبية 2********/
 .dconfirm2 {
-
   text-align: center;
 }
 
@@ -1697,7 +1839,7 @@ header {
 }
 
 .dcarp {
-  color: var(--BROWN, #3D2C2C);
+  color: var(--Brown);
   text-align: right;
   font-family: Cairo;
   font-size: 32px;
@@ -1715,28 +1857,26 @@ header {
 }
 
 .ThesapySideBar li a {
-  color: #3D2C2C;
+  color: var(--Brown);
   text-align: right;
   font-family: Cairo;
   font-size: 21.5px;
   font-weight: 500;
   line-height: 17%;
   text-decoration: none;
-
-
 }
 
 .ThesapySideBar li:hover {
-  background-color: #EEE;
+  background-color: #eee;
 }
 
 .tactive {
   /** بديه لل li اللي في الصفحه  اللي انا واقفه فيها عشان يبقا باين اني مختراها**/
-  background-color: #EEE
+  background-color: #eee;
 }
 
 .Thesapybtn {
-  color: #93000A;
+  color: #93000a;
   text-align: right;
   font-family: Cairo;
   font-size: 20px;
@@ -1765,7 +1905,7 @@ header {
 }
 
 .Thesapy a {
-  color: #5E6135;
+  color: #5e6135;
   text-align: right;
   font-family: Cairo;
   font-size: 20px;
@@ -1775,15 +1915,15 @@ header {
 
 .TUSER h4,
 .Tform label {
-  color: #3D2C2C !;
+  color: var(--Brown) !;
   text-align: right;
-  font-family: Inter;
-  font-size: 20px;
+  font-family: Cairo;
+  font-size: 1.1rem !important;
   font-weight: 600;
 }
 
 .TUSER p {
-  color: #605D5D;
+  color: #605d5d;
   text-align: right;
   font-family: Cairo;
   font-size: 17px;
@@ -1794,7 +1934,7 @@ header {
 .Tform .tPass,
 .taddress {
   border-radius: 6px;
-  border: 1px solid #84746A;
+  border: 1px solid #817757;
   padding: 5px 9px;
 }
 
@@ -1805,11 +1945,15 @@ header {
   outline: none;
   width: 100%;
   background-color: transparent;
-  color: #605D5D;
+  color: #605d5d;
   text-align: right;
   font-family: Cairo;
   font-size: 20px;
   font-weight: 500;
+}
+
+.tPass:focus-within {
+  border: 1px #86b7fe solid;
 }
 
 .Tform label {
@@ -1830,7 +1974,7 @@ header {
 }
 
 .Tpassword {
-  color: #605D5D !important;
+  color: #605d5d !important;
   text-align: right !important;
   font-family: Inter !important;
   font-size: 19px !important;
@@ -1838,7 +1982,7 @@ header {
 }
 
 .tPass i {
-  color: #84746A;
+  color: #84746a;
   z-index: 10;
   margin-top: 7px;
   cursor: pointer;
@@ -1846,12 +1990,12 @@ header {
 
 .tPass i.hidepasst::before {
   content: "\f070";
-  color: #84746A;
+  color: #84746a;
   z-index: 10;
 }
 
 .tinput {
-  color: #605D5D;
+  color: #605d5d;
   text-align: right;
   /* font-family: Cairo; */
   padding: 8px 5px;
@@ -1865,7 +2009,7 @@ header {
   box-shadow: none !important;
 }
 
-.tdateBD[type=date]::-webkit-calendar-picker-indicator {
+.tdateBD[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   left: 7px;
   color: transparent;
@@ -1876,7 +2020,7 @@ header {
 }
 
 .BDdateTicon {
-  color: #AEA7A7;
+  color: #aea7a7;
   position: absolute;
   left: 15px;
   top: 12px;
@@ -1888,13 +2032,11 @@ header {
   font-family: Cairo;
   font-size: 34px;
   font-weight: 500;
-
 }
 
 /*******  بداية الطلبات*****/
 
 .step-wizard {
-
   /* display: flex; */
   position: relative;
   justify-content: center;
@@ -1924,12 +2066,12 @@ header {
   position: relative;
 }
 
-.step-wizard-item+.step-wizard-item:after {
+.step-wizard-item + .step-wizard-item:after {
   content: "";
   position: absolute;
   left: 100%;
   top: 19px;
-  background: #D0D0D0;
+  background: #d0d0d0;
   width: 100%;
   height: 4px;
   transform: translateX(-50%);
@@ -1948,12 +2090,11 @@ header {
   z-index: 10;
 }
 
-
 .progress-count:after {
   content: "";
   height: 40px;
   width: 40px;
-  background: #6B8C37;
+  background: #6b8c37;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1979,46 +2120,43 @@ header {
 .progress-labell {
   font-size: 14px;
   margin-top: 10px;
-  color: #3D2C2C;
+  color: var(--Brown);
   text-align: center;
   font-family: Cairo;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-
 }
 
 .progress-labell {
-  color: #5E6135;
+  color: #5e6135;
   margin: 0;
   font-weight: 600;
   line-height: 117.687%;
-
 }
 
 .current-item .progress-count:before,
-.current-item~.step-wizard-item .progress-count:before {
+.current-item ~ .step-wizard-item .progress-count:before {
   display: none;
 }
 
-.current-item~.step-wizard-item .progress-count:after {
+.current-item ~ .step-wizard-item .progress-count:after {
   background-color: #fff;
-  border: #D7D2D2 2px solid;
+  border: #d7d2d2 2px solid;
 }
 
 .current-item .progress-count:after {
   background: #fff;
-  border: 2px solid #6B8C37;
+  border: 2px solid #6b8c37;
 }
 
-@media (max-width:980px) {
+@media (max-width: 980px) {
   .step-wizard-item {
     min-width: 85px;
   }
 
   .ThesapySideBar li a {
     line-height: 21px;
-
   }
 }
 
@@ -2027,35 +2165,33 @@ header {
       min-width: 85px;
     }  
   } */
-@media (max-width:300px) {
+@media (max-width: 300px) {
   .step-wizard-item {
     min-width: 55px;
   }
 
   .ThesapySideBar li a {
     line-height: 12px;
-
   }
 }
 
 .finalordert {
   left: 0px !important;
   margin-top: 30px;
-
 }
 
 .finalordert h6 {
-  color: #3D2C2C;
+  color: var(--Brown);
   font-family: Cairo;
   font-size: 25px;
   font-weight: 600;
   padding: 30px 0px 25px 0px;
-  border-bottom: 2px solid #E1E1E1;
+  border-bottom: 2px solid #e1e1e1;
   width: 100%;
 }
 
 .th5 {
-  color: #3D2C2C !important;
+  color: var(--Brown) !important;
   font-size: 18px !important;
   font-weight: 600 !important;
   line-height: 28px;
@@ -2085,7 +2221,7 @@ header {
 }
 
 .tscol h5 {
-  color: #3D2C2C;
+  color: var(--Brown);
   text-align: right;
   font-family: Cairo;
   font-size: 20px;
@@ -2095,7 +2231,7 @@ header {
 }
 
 .ptrate {
-  color: #3D2C2C;
+  color: var(--Brown);
   text-align: right;
   font-family: Inter;
   font-size: 23px;
@@ -2107,7 +2243,6 @@ header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: start;
-
 }
 
 .Trating input[type="radio"] {
@@ -2121,7 +2256,7 @@ header {
   margin-left: 2px;
 }
 
-.Trating input[type="radio"]:checked~label {
+.Trating input[type="radio"]:checked ~ label {
   color: #ffc107 !important;
 }
 
@@ -2131,23 +2266,20 @@ header {
   opacity: 0 !important;
 }
 
-.Trating input:checked~label:before {
+.Trating input:checked ~ label:before {
   opacity: 1 !important;
 }
 
 .TBack {
   border: 1px solid var(--btnColor);
   color: var(--btnColor);
-  background-color: #FFF;
-
+  background-color: #fff;
 }
 
 .TBack:hover {
   color: #fff;
   background-color: var(--btnColor);
-
 }
-
 
 /***********الرسائل الوارده الفارغه***************/
 .nomessgT {
@@ -2187,7 +2319,6 @@ header {
   border-radius: 15px;
   overflow: hidden;
   height: 100%;
-
 }
 
 .divimgT:hover {
@@ -2200,11 +2331,15 @@ header {
   height: 310px;
   object-fit: fill;
   object-position: 0px -25px;
-
 }
 
 .linearDivT {
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.019), rgba(0, 0, 0, 0.978));
+  background: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0.019),
+    rgba(0, 0, 0, 0.978)
+  );
   position: absolute;
   top: 0;
   left: 0;
@@ -2267,7 +2402,7 @@ header {
 }
 
 .TPp .pt {
-  color: #5E6135;
+  color: #5e6135;
   font-family: Cairo;
   font-size: 1.5rem;
   font-weight: 400;
@@ -2276,9 +2411,9 @@ header {
 }
 /*********** اضافة منتج جديد************/
 .TaddImg {
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   border-radius: 0.625rem;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -2309,7 +2444,7 @@ header {
   height: 22.3125rem;
   flex-shrink: 0;
 }
-.img-view h3{
+.img-view h3 {
   color: #000;
   font-family: Cairo !important;
   font-size: 1.3rem !important;
@@ -2342,7 +2477,7 @@ header {
 }
 
 .tinput {
-  border: 1px solid #84746A;
+  border: 1px solid #84746a;
 }
 
 textarea {
@@ -2359,7 +2494,7 @@ textarea {
   padding: 10px;
   color: #000;
   text-align: right !important;
-  font-size: .9rem;
+  font-size: 0.9rem;
   z-index: 200;
   margin: auto;
 }

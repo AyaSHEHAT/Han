@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تأكيد الطلبية</title>
-    <link rel="stylesheet" href="CSS/all.min.css">
-    <link rel="stylesheet" href="CSS/animate.css">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/aos.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/animate.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/aos.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+
 
 </head>
 
 <body>
     <div class="logo">
-        <h2 class="text-center d-block">Handopia</h2>
+        <h2 class="text-center d-block">El-KHAN</h2>
     </div> <!--div-logo -->
     <nav dir="rtl" class="navbar navbar-expand-lg navbar-light mb-0 pb-0">
 
@@ -32,7 +34,7 @@
                         <a class="nav-link" aria-current="page" href="#">الجديد و الاكثر شيوعا</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">الورش</a>
+                        <a class="nav-link" href="#">الورش</a>
                     </li>
 
                     <li class="nav-item">
@@ -55,7 +57,7 @@
                 <div class="pb-1 pt-1 d-flex search ">
                     <input type="search" class="form-control" placeholder=" بحث عن منتجات،اقسام،ورش،عروض ......">
 
-                    <a href="#"><img src="images/camera-icon.svg" class="m-1 p-2 bg-light"
+                    <a href="#"><img src="../images/camera-icon.svg" class="m-1 p-2 bg-light"
                             style="max-width: 40px; border-radius: 50%;"></a>
 
                 </div>
@@ -63,7 +65,8 @@
                 <ul class="d-flex ms-5">
                     <li class="nav-item ">
 
-                        <a class="nav-link  m-2 pt-3" href="حساب المشتري.html"><i class="fa fa-user-circle fa-regular"></i></a>
+                        <a class="nav-link  m-2 pt-3" href="حساب المشتري.html"><i
+                                class="fa fa-user-circle fa-regular"></i></a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link  m-2 pt-3" href="المفضلة.html"><i class="fa fa-heart fa-regular"></i></a>
@@ -72,7 +75,8 @@
 
                     <li class="nav-item">
 
-                        <a class="nav-link  m-2 pt-3" href="سله التسوق.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a class="nav-link  m-2 pt-3" href="سله التسوق.html"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
                     </li>
 
                 </ul>
@@ -122,7 +126,7 @@
                 </div>
                 <div class="col-6">
                     <label for="validationDefault06" class="form-label">المدينه</label>
-                    <select class="form-select" id="validationDefault05" required>
+                    <select class="form-select" id="validationDefault06" required>
 
                         <option value="" class="dnone"> المنصوره</option>
                         <option value="">المعادى</option>
@@ -130,8 +134,8 @@
                     </select>
                 </div>
                 <div class="col-12">
-                    <label for="validationDefault06" class="form-label">العنوان</label>
-                    <input type="text" class="form-control" id="validationDefault06" required>
+                    <label for="validationDefault07" class="form-label">العنوان</label>
+                    <input type="text" class="form-control" id="validationDefault07" required>
                 </div>
                 <div class="col-12" style="margin-top: 2%;margin-bottom: 2%;">
                     <div class="form-check">
@@ -182,7 +186,7 @@
                     <div class="col-6 rightcard">
 
                         <div class="rightcard1 d-flex">
-                            <img src="images/dmois.png" alt="">
+                            <img src="../images/dmois.png" alt="">
                             <div class="seccol">
                                 <p>
                                     منتجات العناية بالبشرة
@@ -193,9 +197,9 @@
 
 
 
-                                <div class="wrapper">
+                                <div class="wrapper"data-counter-id="counter-1">
                                     <span class="minus">-</span>
-                                    <span class="num">1</span>
+                                    <span class="num">01</span>
                                     <span class="plus">+</span>
                                 </div>
 
@@ -222,7 +226,7 @@
                         </div>
                         <!-- 1 -->
                         <div class="rightcard1 d-flex">
-                            <img src="images/flower.png" alt="">
+                            <img src="../images/flower.png" alt="">
                             <div class="seccol">
                                 <p>
                                     منتجات خياطة وتطريز
@@ -233,11 +237,12 @@
 
 
 
-                                <div class="wrapper">
+                                <div class="wrapper"data-counter-id="counter-2">
                                     <span class="minus">-</span>
-                                    <span class="num">1</span>
+                                    <span class="num">01</span>
                                     <span class="plus">+</span>
                                 </div>
+                               
 
 
                             </div>
@@ -299,9 +304,9 @@
                     </div>
                 </div>
 
-<!-- row -->
+                <!-- row -->
                 <div class="col-12">
-                    <a href="#" style=" text-decoration:none;">
+                    <a href="جميع المنتجات.html" style=" text-decoration:none;">
                         <h6 style=" color:#B81A1A;border-bottom: solid #B81A1A 1px;width: 12%;">
                             < اضافة منتجات اخرى </h6>
 
@@ -330,33 +335,43 @@
 
 
 
-
     <script>
-        const plus = document.querySelector(".plus"),
-            minus = document.querySelector(".minus"),
-            num = document.querySelector(".num");
-        let a = 1;
-        plus.addEventListener("click", () => {
-            a++;
-            a = (a < 10) ? "0" + a : a;
-            num.innerText = a;
+
+
+        const counters = document.querySelectorAll('[data-counter-id]');
+
+        counters.forEach((counter) => {
+            const id = counter.dataset.counterId;
+            const minus = counter.querySelector(".minus");
+            const num = counter.querySelector(".num");
+            // let count = parseInt(num.innerText, 10);
+            let  count = 1;
+
+            minus.addEventListener("click", () => {
+                if (count > 1) {
+                    count--;
+                    count = (count < 10) ? "0" + count : count;
+                    num.innerText = count;
+                }
+            });
+
+            const plus = counter.querySelector(".plus");
+            plus.addEventListener("click", () => {
+                count++;
+                count = (count < 10) ? "0" + count : count;
+                num.innerText = count;
+            });
         });
-        minus.addEventListener("click", () => {
-            if (a > 1) {
-                a--;
-                a = (a < 10) ? "0" + a : a;
-                num.innerText = a;
-            }
-        });
+
     </script>
 
 
-    <script src="JS/bootstrap.bundle.min.js"></script>
-    <script src="JS/wow.min.js"></script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
-    <script src="JS/aos.js"></script>
+    <script src="../JS/aos.js"></script>
     <script>
         AOS.init();
     </script>

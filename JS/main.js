@@ -22,7 +22,7 @@ hearts.forEach(a => {
 var star = document.querySelectorAll('.checked');
 
 star.forEach((b) => {
-    console.log(b);
+    // console.log(b);
     if (b.classList.contains('fa-regular')) {
         b.classList.remove("fa-regular");
         b.classList.add("fa-solid");
@@ -226,21 +226,21 @@ function Manufacturing() {
 
 ////////////////////////// eye pass show/hide
 
-var showTpass = document.querySelectorAll(".Tshowpass ");
+// var showTpass = document.querySelectorAll(".Tshowpass ");
 
 
-showTpass.forEach(eye => {
-    eye.addEventListener('click', () => {
-        const pInput = eye.parentElement.querySelector("input");
-        if (pInput.type === "password") {
-            eye.classList.replace("Tshowpass", "hidepasst");
-            return (pInput.type = "text");
-        } else {
-            eye.classList.replace("hidepasst", "Tshowpass");
-            return (pInput.type = "password");
-        }
-    });
-});
+// showTpass.forEach(eye => {
+//     eye.addEventListener('click', () => {
+//         const pInput = eye.parentElement.querySelector("input");
+//         if (pInput.type === "password") {
+//             eye.classList.replace("Tshowpass", "hidepasst");
+//             return (pInput.type = "text");
+//         } else {
+//             eye.classList.replace("hidepasst", "Tshowpass");
+//             return (pInput.type = "password");
+//         }
+//     });
+// });
 
 ////////////////////////// نسبة الخصم
 const taddDes = document.querySelector('#taddDesc ');
@@ -250,3 +250,14 @@ var taddDesc = function () {
     taddDescprice.style.display = 'block';
     taddDes.style.display = 'none';
 }
+
+
+///////////search icon hide////////
+const searchIcon = document.querySelector('#searchIcon ');
+
+var hideIcon = function () {
+        searchIcon.style.display = 'none';
+}
+
+
+

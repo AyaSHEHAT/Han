@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <link rel="stylesheet" href="../CSS/animate.css" />
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="../CSS/aos.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+
+  <body dir="rtl">
+    <section class="p-1 m-1 sellerPro">
+      <div class="row">
+        <div class="col-lg-2 sidebar">
+          <div class="logo p-2 m-2 mb-5">
+            <h3 class="text-center d-block">El-Khan</h3>
+          </div>
+
+          <div class="container">
+            <ul class="navbar-nav pt-5">
+              <li class="nav-item m-2">
+                <a class="nav-link" href="admin.html">
+                  <i class="fa-solid fa-house m-1"></i> الرئيسية</a
+                >
+              </li>
+
+              <div class="text-center logout m-3">
+                <a href="#logOut">تسجيل الخروج</a>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!-- end of container-fluid -->
+
+        <div class="col-lg-10 col-sm-12 col-md-12">
+          <div class="row">
+            <div class="container d-flex justify-content-between">
+              <form action="" class="col-lg-4 me-5">
+                <input
+                  type="search"
+                  class="form-control"
+                  onfocus="hideIcon()"
+                  id="inputsearch"
+                  placeholder=" بحث"
+                />
+                <i class="fa fa-search" id="searchIcon" aria-hidden="true"></i>
+              </form>
+              <div class="col-lg-6"></div>
+              <div class="sellerLogo d-flex p-2 mt-2 col-lg-1" dir="ltr">
+                <!-- <h6 class="mt-3 m-1">الخان</h6> -->
+                <img class="" src="../images/logo.jpg" alt="alhkan-logo" />
+              </div>
+              <div class="gap-lg-1"></div>
+            </div>
+          </div>
+          <div class="m-auto mt-5 col-12 col-sm-11">
+            <table class="tAdminCard w-100 m-auto">
+              <thead>
+                <tr class="ordersLabel2">
+                  <th class="col-2 firstth">الاسم</th>
+                  <th class="col-3">البريد الالكتروني</th>
+                  <th class="col-2">تاريخ الانضمام</th>
+                  <th class="col-sm-1 col-2">الحالة</th>
+                  <th class="col-2 lastth"></th>
+                </tr>
+              </thead>
+              <!-- header -->
+              <tbody class="ordersData flex-wrap">
+                <tr class="text-center m-auto TorderColerdBg">
+                  <td class="py-sm-3 text-center Adminimg">
+                    <img
+                      class="d-inline-block"
+                      src="../images/mohammed.jpeg"
+                      alt="mohammed"
+                    />
+                    <h6 class="d-inline-block pe-md-2">محمد باسم</h6>
+                  </td>
+                  <td class="py-sm-3 text-center">
+                    <h6 class="p-sm-2 TemalAdmin">Mohammed@exmple.com</h6>
+                  </td>
+                  <td class="py-sm-3 text-center date">
+                    <p class="text-secondary tdateAdmin pt-2">13/05/2023</p>
+                  </td>
+                  <td class="py-sm-3 text-center">
+                    <form action="" class="adminSelectDiv m-auto">
+                      <select
+                        id=""
+                        class="adminSelect w-100 px-2 py-2 text-center form-control"
+                      >
+                        <option value="">اختر</option>
+                        <option value="بائع">بائع</option>
+                        <option value="مشتري">مشتري</option>
+                      </select>
+                    </form>
+                  </td>
+                  <td class="p-2 text-center">
+                    <button class="btnadminDele">
+                      <i class="fa-solid fa-trash-can adminDele"></i>
+                    </button>
+                  </td>
+                </tr>
+                <!-- 1 -->
+                <tr class="text-center m-auto TorderColerdBg">
+                  <td class="py-sm-3text-center Adminimg">
+                    <img
+                      class="d-inline-block"
+                      src="../images/ahmed.jpg"
+                      alt="ahmed"
+                    />
+                    <h6 class="d-inline-block pe-md-2">احمد منعم</h6>
+                  </td>
+                  <td class="py-sm-3 text-center">
+                    <h6 class="p-sm-2 TemalAdmin">Ahmed@exmple.com</h6>
+                  </td>
+                  <td class="py-sm-3 text-center date">
+                    <p class="text-secondary tdateAdmin pt-2">15/05/2023</p>
+                  </td>
+                  <td class="py-sm-3 text-center">
+                    <form action="" class="adminSelectDiv m-auto">
+                      <select
+                        id=""
+                        class="adminSelect w-100 px-2 py-2 text-center form-control"
+                      >
+                        <option value="">اختر</option>
+                        <option value="بائع">بائع</option>
+                        <option value="مشتري">مشتري</option>
+                      </select>
+                    </form>
+                  </td>
+                  <td class="p-2 text-center">
+                    <button class="btnadminDele">
+                      <i class="fa-solid fa-trash-can adminDele"></i>
+                    </button>
+                  </td>
+                </tr>
+                <!-- 2 -->
+                <tr class="text-center m-auto TorderColerdBg">
+                  <td class="py-sm-3 text-center Adminimg">
+                    <img
+                      class="d-inline-block"
+                      src="../images/sally.jpg"
+                      alt="sally"
+                    />
+                    <h6 class="d-inline-block pe-md-2">سالي صالح</h6>
+                  </td>
+                  <td class="py-sm-3 text-center">
+                    <h6 class="p-sm-2 TemalAdmin">SallySaleh@exmple.com</h6>
+                  </td>
+                  <td class="py-sm-3 text-center date">
+                    <p class="text-secondary tdateAdmin pt-2">02/08/2023</p>
+                  </td>
+                  <td class="py-sm-3 text-center">
+                    <form action="" class="adminSelectDiv m-auto">
+                      <select
+                        id=""
+                        class="adminSelect w-100 px-2 py-2 text-center form-control"
+                      >
+                        <option value="">اختر</option>
+                        <option value="بائع">بائع</option>
+                        <option value="مشتري">مشتري</option>
+                      </select>
+                    </form>
+                  </td>
+                  <td class="p-2 text-center">
+                    <button class="btnadminDele">
+                      <i class="fa-solid fa-trash-can adminDele"></i>
+                    </button>
+                  </td>
+                </tr>
+                <!-- 3 -->
+                <tr  class="text-center m-auto TorderColerdBg">
+                  <td class="py-sm-3 text-center Adminimg">
+                    <img
+                      class="d-inline-block"
+                      src="../images/waleed.jpeg"
+                      alt="waleed"
+                    />
+                    <h6 class="d-inline-block pe-md-2">وليد محسن</h6>
+                  </td>
+                  <td class="py-sm-3 text-center">
+                    <h6 class="p-sm-2 TemalAdmin">WaleedMohs@exmple.com</h6>
+                  </td>
+                  <td class="py-sm-3 text-center date">
+                    <p class="text-secondary tdateAdmin pt-2">08/10/2023</p>
+                  </td>
+                  <td class="py-sm-3 text-center">
+                    <form action="" class="adminSelectDiv m-auto">
+                      <select
+                        id=""
+                        class="adminSelect w-100 px-2 py-2 text-center form-control"
+                      >
+                        <option value="">اختر</option>
+                        <option value="بائع">بائع</option>
+                        <option value="مشتري">مشتري</option>
+                      </select>
+                    </form>
+                  </td>
+                  <td class="p-2 text-center">
+                    <button  class="btnadminDele">
+                      <i class="fa-solid fa-trash-can adminDele"></i>
+                    </button>
+                  </td>
+                </tr>
+                <!-- 4 -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- end of orders div -->
+      </div>
+      <!-- end row -->
+    </section>
+
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/aos.js"></script>
+    <script src="../JS/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      //// delete
+
+      var deleteUser = document.querySelectorAll(".btnadminDele");
+
+      deleteUser.forEach(function (e) {
+        e.addEventListener("click", function () {
+          console.log(e.parentNode.parentNode.remove());
+        });
+      });
+    </script>
+
+    <script src="../JS/main.js"></script>
+  </body>
+</html>
